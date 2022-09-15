@@ -1,6 +1,6 @@
 :root {
   --border-radius: 4px;
-  --color-text: #607e26;
+  --color-text: #000;
   --color-primary: #607e26;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
@@ -21,10 +21,10 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: 54rem;
+  --size-content: 64rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
-  --background-color: #161217;
+  --background-color: #fff;
 }
 html {
   -webkit-text-size-adjust: 100%;

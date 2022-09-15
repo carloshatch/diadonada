@@ -7,6 +7,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-postcss',
+    {
+        resolve: `gatsby-plugin-react-svg`,
+        options: {
+            rule: {
+                include: /svg/
+            }
+        }
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,5 +39,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Gochi Hand`,
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }
