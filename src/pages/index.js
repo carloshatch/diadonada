@@ -50,7 +50,7 @@ const IndexPage = () => (
                     </div>
                 </div>
                 <div className="mt-4">
-                    <img src={GrandeNada} border="0" alt="Ilustracao mostrando o quanto somos pequenos, quase nada" />
+                    <img src={GrandeNada} border="0" alt="Ilustracao mostrando o quanto somos pequenos, quase nada" width="480" height="603" />
                 </div>
             </div>
         </div>
