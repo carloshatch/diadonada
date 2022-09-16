@@ -10,23 +10,25 @@ import Icon from "../svg/nada6.svg"
 const IndexPage = () => (
     <Layout>
         <Seo title="P&aacute;gina Inicial" />
-        <div className="grid grid-cols-2 gap-0 place-content-center">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-0 place-content-center">
             <div>
                 <div className={styles.logo}>
                     <Icon width="320px" height="320px" className="m-auto" />
                 </div>
-                <div className="clearfix text-left p-4">
-                    <p className="font-bold"><span className="rounded text-white bg-black p-1">O dia do nada</span> Artes e atividades aleatórias sem propósito para celebrar coisa nenhuma.</p>
-                    <p>Você já deve ter se questionado sobre como o tempo está passando rápido. Tudo é urgente. Pra ontem. O dia não rende. A semana voa. Os meses são consumidos pelo fogo do tempo alimentado pela irreflexão. Datas e eventos pelos quais você ansiava que há poucos dias pareciam distantes abruptamente tornam-se presentes e logo estão no passado.</p>
-                    <p>Um novo semestre começa, já é seu aniversário, fim do ano. As redes socias trazem lembranças de eventos ocorridos há anos, mas parece que foi ontem. Você pensa: “não tenho tempo pra nada”.</p>
-                    <p>Então pare e reserve um tempo para fazer nada com a gente e celebrar o dia do nada.</p>
+                <div className="hidden md:block">
+                    <div className="clearfix text-justify md:text-left p-4">
+                        <p className="font-bold"><span className="rounded text-white bg-black p-1">O dia do nada</span> Artes e atividades aleatórias sem propósito para celebrar coisa nenhuma.</p>
+                        <p>Você já deve ter se questionado sobre como o tempo está passando rápido. Tudo é urgente. Pra ontem. O dia não rende. A semana voa. Os meses são consumidos pelo fogo do tempo alimentado pela irreflexão. Datas e eventos pelos quais você ansiava que há poucos dias pareciam distantes abruptamente tornam-se presentes e logo estão no passado.</p>
+                        <p>Um novo semestre começa, já é seu aniversário, fim do ano. As redes socias trazem lembranças de eventos ocorridos há anos, mas parece que foi ontem. Você pensa: “não tenho tempo pra nada”.</p>
+                        <p>Então pare e reserve um tempo para fazer nada com a gente e celebrar o dia do nada.</p>
+                    </div>
                 </div>
             </div>
-            <div className="text-2xl text-black font-bold">
+            <div className="md:text-2xl sm:text-xl text-black font-bold">
                 <div className="clearfix">
                     <div className="text-left whitespace-nowrap">
                         #DIADONADA
-                        <div className="float-right text-black font-bold text-2xl whitespace-nowrap">
+                        <div className="float-right text-black font-bold whitespace-nowrap">
                             S&Atilde;O CARLOS, SP
                         </div>
                     </div>
@@ -49,6 +51,14 @@ const IndexPage = () => (
                 <div className="mt-4">
                     <img src={GrandeNada} border="0" alt="Ilustracao mostrando o quanto somos pequenos, quase nada" />
                 </div>
+            </div>
+        </div>
+        <div className="grid md:hidden sm:block sm:grid-cols-1 md:grid-cols-2 gap-0 place-content-center">
+            <div className="clearfix text-justify md:text-left p-4">
+                <p className="font-bold"><span className="rounded text-white bg-black p-1">O dia do nada</span> Artes e atividades aleatórias sem propósito para celebrar coisa nenhuma.</p>
+                <p>Você já deve ter se questionado sobre como o tempo está passando rápido. Tudo é urgente. Pra ontem. O dia não rende. A semana voa. Os meses são consumidos pelo fogo do tempo alimentado pela irreflexão. Datas e eventos pelos quais você ansiava que há poucos dias pareciam distantes abruptamente tornam-se presentes e logo estão no passado.</p>
+                <p>Um novo semestre começa, já é seu aniversário, fim do ano. As redes socias trazem lembranças de eventos ocorridos há anos, mas parece que foi ontem. Você pensa: “não tenho tempo pra nada”.</p>
+                <p>Então pare e reserve um tempo para fazer nada com a gente e celebrar o dia do nada.</p>
             </div>
         </div>
   </Layout>
